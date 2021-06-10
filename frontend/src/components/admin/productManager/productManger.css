@@ -1,0 +1,45 @@
+.filter{
+    grid-column: 1;
+    background-color: tomato;
+}
+.adminOption{
+    height: 8vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}   
+button{
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: solid 2px #db5292;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    outline: none;
+}
+button:hover{
+    background-color: #db5292;
+    color: #ffffff;
+}
+
+/* Card CSS */
+
+.productCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+ul{
+    list-style: none;
+}
+.productImg{
+    margin: auto;
+}
+.productSpecification{
+    margin: auto;
+}
+.productPrice{
+    margin: auto;
+}
+

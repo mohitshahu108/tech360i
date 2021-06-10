@@ -1,0 +1,142 @@
+.slide-show-container {
+  height: auto;
+  max-width: 30rem;
+  margin: auto;
+  border: solid 10px #f15d5d;
+  padding: 5rem;
+  position: relative;
+}
+.home {
+  padding: 30px;
+}
+
+.prev {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  padding: 15px;
+  background-color: #ff9f9f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.prev:hover {
+  background-color: #f15d5d;
+}
+.next {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  padding: 15px;
+  background-color: #ff9f9f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.next:hover {
+  background-color: #f15d5d;
+}
+.img {
+  max-width: 100%;
+}
+
+/* **************************************************************************************** */
+
+.products-container {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "lappi ."
+    ". desktop";
+  background-color: #f15d5d;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.lappi-img {
+  max-width: 100%;
+}
+.lappi-img img {
+  max-width: 100%;
+}
+.desktop-img {
+  max-width: 70%;
+}
+.desktop-img img {
+  max-width: 100%;
+}
+.lappi {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: lappi;
+  max-width: 50rem;
+  margin: 2rem;
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+}
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: desktop;
+  max-width: 50rem;
+  margin: 2rem;
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+}
+
+/* Responsive  */
+
+@media screen and (max-width: 1100px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 0;
+  }
+  .products-container {
+    padding: 0;
+  }
+  .lappi{
+    padding: 10px;
+    text-align: center;
+  }
+  .desktop{
+    padding: 10px;
+    text-align: center;
+  }
+}
+/* Home show more Button Css  */
+.home button {
+  padding: 0.8rem;
+  color: #f15d5d;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid #f15d5d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home button:hover {
+  color: #ffffff;
+  background-color: #f15d5d;
+}

@@ -1,0 +1,111 @@
+* {
+  font-family: monospace;
+  font-size: 18px;
+}
+.body {
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+.badge {
+  background-color: #685050;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.alter {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border: 0.5rem;
+}
+
+.alter-info {
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alter-dander {
+  color: #a02020;
+  background-color: #ffe0e0;
+}
+
+/* Loading-box */
+.loading-box {
+  max-width: 5rem;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.8rem;
+  color: #f15d5d;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid #f15d5d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #f15d5d;
+}
+
+/* sign in page css */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 30rem;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  border: #f15d5d solid;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid rgb(97, 87, 87);
+  outline: none;
+  color: #f15d5d;
+  font-weight: 700;
+}
+
+/* Check Out Steps*/
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top-color: #f15d5d;
+  color: #f15d5d;
+}
+
+
+/* align-in-line */
+.align-in-line{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+li{
+  list-style-type: none;
+}

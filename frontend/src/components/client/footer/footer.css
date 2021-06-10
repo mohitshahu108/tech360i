@@ -1,0 +1,31 @@
+.footer{
+    background-color: #f15d5d;
+    
+}
+.footer ul{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-weight: 600;
+ font-family: monospace;
+ font-size: 19px;
+ padding: 15px;
+}
+.footer ul :last-child{
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer ul li {
+    cursor: pointer;
+    color: #ffff;
+    background-color: #f15d5d;
+    border-radius: 5px;
+    padding: 10px;
+  
+  }
+  .footer ul li:hover {
+    background-color: #ffff;
+    color: #222429;
+    transition: 0.5s;
+  }

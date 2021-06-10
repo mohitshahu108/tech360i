@@ -1,0 +1,144 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f15d5d;
+  font-weight: 700;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 19px;
+  margin: auto
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftnav {
+  width: 30rem;
+}
+.leftnav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rightnav {
+  width: 20rem;
+}
+.rightnav ul {
+  display: flex;
+  justify-content: space-around;
+}
+ul {
+  list-style: none;
+}
+.nav ul li {
+  cursor: pointer;
+  color: #ffff;
+  background-color: #f15d5d;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.nav ul li:hover {
+  background-color: #ffff;
+  color: #222429;
+  transition: 0.5s;
+}
+
+/* side nav */
+.sidenav ul li {
+  cursor: pointer;
+  color: #ffff;
+  background-color: #f15d5d;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.sidenav ul li:hover {
+  background-color: #ffff;
+  color: #222429;
+  transition: 0.5s;
+}
+
+a{
+  text-decoration: none;
+}
+
+.hamberger {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  display: none;  
+  z-index: 2;
+  width: 2rem;
+}
+.hamberger div {
+  background-color: #ffff;
+  width: 2rem;
+  height: 3px;
+  margin: 3px;
+}
+
+/* Side NavBar css */
+
+.sidenav {
+  display: none;
+  height: 100vh;
+  width: 0rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f15d5d;
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 60px;
+  font-family: monospace;
+  font-size: 19px;
+  font-weight: 700;
+}
+.navlinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+  align-items: center;
+}
+
+/* Open class for sidenav */
+
+.open{
+  width: 20rem;
+}
+
+
+
+
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+  .sidenav {
+    display: block;
+  }
+}
+
+/*Dropdown*/
+.navBar-page .dropdown-content{
+  display: none;
+}
+.navBar-page .dropdown:hover .dropdown-content{
+  display: none;
+}
